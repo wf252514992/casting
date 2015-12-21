@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3D3D3" >
+
+        <ImageView
+            android:id="@+id/companypic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companypic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="副影视公司"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/watch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注33" />
+
+            <Button
+                android:id="@+id/fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="粉丝70" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/linear"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/produce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="简介：哈哈"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/produce"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="私信" />
+
+        <Button
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="关注状态" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linear2"
+        >
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/home" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_weight="0.3" -->
+<!--             android:gravity="center_vertical|center_horizontal" -->
+<!--             android:orientation="vertical" > -->
+
+          
+
+            <Button
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主页"
+                android:textSize="18dp"
+                android:layout_weight="0.3" />
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:id="@+id/dynamic" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_weight="0.3" -->
+<!--             android:gravity="center_vertical|center_horizontal" -->
+<!--             android:orientation="vertical" > -->
+
+           
+
+            <Button
+                 android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动态"
+                android:textSize="18dp"
+                android:layout_weight="0.3" />
+<!--         </LinearLayout> -->
+	 
+		   
+<!-- 	         <LinearLayout -->
+<!--             android:id="@+id/photos" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_weight="0.3" -->
+<!--             android:gravity="center_vertical|center_horizontal" -->
+<!--             android:orientation="vertical" > -->
+		
+		    
+	            <Button
+	                android:id="@+id/text3"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="相册"
+	                android:textSize="18dp"
+	                android:layout_weight="0.3" />
+<!-- 	      </LinearLayout> -->
+     
+    </LinearLayout>
+      <LinearLayout
+    android:id="@+id/fragment_layot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@id/bottomlinear"
+    > 
+</LinearLayout>
+</RelativeLayout>

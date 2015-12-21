@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/ll_expression"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/atsend "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/at_btn" />
+
+            <ImageButton
+                android:id="@+id/expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/express_btn" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/linear1"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_expression"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_ll_expression_height"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_vp_id_height"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_vp_selected_index"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/titlelayout" 
+        android:background="#ebebeb">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editreview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="写评论...." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

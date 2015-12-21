@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@+id/titlelayout"
+        layout="@layout/functemplate" />
+    <ListView 
+        android:id="@+id/ShareRangeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
+<!-- <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--          > -->
+
+<!--        <TextView -->
+<!--             android:id="@+id/open" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="30dp" -->
+<!--             android:text="公开" -->
+<!--             android:textSize="18dp" /> -->
+<!--         <CheckBox -->
+<!--             android:id="@+id/openCheckbox" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="20dp" /> -->
+<!--     </RelativeLayout> -->
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--         android:background="@drawable/background_registitem_b" -->
+<!--          > -->
+
+<!--        <TextView -->
+<!--             android:id="@+id/attentional" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="30dp" -->
+<!--             android:text="我关注的人" -->
+<!--             android:textSize="18dp"  /> -->
+<!--         <CheckBox -->
+<!--             android:id="@+id/attentionalCheckbox" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="20dp" /> -->
+<!--     </RelativeLayout> -->
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" -->
+<!--          > -->
+
+        
+<!--         <TextView -->
+<!--             android:id="@+id/only" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="30dp" -->
+<!--             android:text="仅自己可见" -->
+<!--             android:textSize="18dp"  /> -->
+<!--         <CheckBox -->
+<!--             android:id="@+id/onlyCheckbox" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_alignParentRight="true" -->
+<!--             android:layout_marginRight="20dp" /> -->
+        
+<!--     </RelativeLayout> -->
+</LinearLayout>

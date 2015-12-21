@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:test="http://schemas.android.com/apk/res/com.example.casting_android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/subhotlabellayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/img_left"
+            android:layout_width="25dp"
+            android:padding="2dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/aboutme"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.example.casting.util.view.refresh.PullToRefreshListView
+        android:id="@+id/lstview_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none"
+        test:listener="true"
+        android:layout_below="@id/subhotlabellayout"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

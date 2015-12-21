@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_base"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/titlelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/functemplate" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="更换封面背景" />
+            </LinearLayout>
+             <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+
+            <ImageView
+                android:id="@+id/img_background"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:gravity="left"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_bgallb" 
+                android:layout_marginLeft="6dp"
+                android:onClick="onClick" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="自定义" 
+               />"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="更换卡片背景" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_personworks"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg01b" 
+                        android:onClick="onClick" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_personworks"
+                        android:layout_centerInParent="true"
+                        android:text="个人作品" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_myaudition"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg02b"
+                        android:onClick="onClick"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_myaudition"
+                        android:layout_centerInParent="true"
+                        android:text="我的试镜" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_personinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg03b"
+                        android:onClick="onClick"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_personinfo"
+                        android:layout_centerInParent="true"
+                        android:text="个人资料" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_personshow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg04b"
+                        android:onClick="onClick"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_personshow"
+                        android:layout_centerInParent="true"
+                        android:text="个人展示" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="6dp"
+                 android:layout_marginRight="6dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_winner_experience"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg05b"
+                        android:onClick="onClick"  />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_winner_experience"
+                        android:layout_centerInParent="true"
+                        android:text="获奖经历" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/img_myvidio"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg06b" 
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_myvidio"
+                        android:layout_centerInParent="true"
+                        android:text="我的视频" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="invisible"
+                     >
+
+                    <ImageView
+                        android:id="@+id/img_winner_experience"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg05b" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:visibility="invisible"
+                   >
+
+                    <ImageView
+                        android:id="@+id/img_winner_experience"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/me_bg05b" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <!--       判断时间间隔，如果时间间隔小于某个值则不显示 -->
+    <TextView 
+        android:id="@+id/othersidetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13-7-23 20:56"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#898989"
+        android:visibility="gone"
+        />
+    <ImageView 
+        android:id="@+id/othersidepic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/othersidetime"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+    <LinearLayout 
+        android:id="@+id/othermessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toRightOf="@id/othersidepic"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/othersidetime"
+        android:layout_marginTop="20dp">
+<!--         <TextView  -->
+<!-- 	                android:id="@+id/tv_msg_content_friend" -->
+<!-- 	                android:layout_width="wrap_content" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:text="2222222222222222222222222222222" -->
+<!-- 	                android:background="@drawable/chatfrom_bg" -->
+<!-- 	                android:clickable="true" -->
+<!-- 	                android:longClickable="true" -->
+<!-- 	                style="@style/chat_content_date_style"/> -->
+        <TextView 
+            android:id="@+id/othermessagedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在吗？"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/chatfrom_bg"
+            style="@style/chat_content_date_style"
+            android:visibility="gone"/>
+    </LinearLayout>
+<!--       判断时间间隔，如果时间间隔小于某个值则不显示 -->
+     <TextView 
+        android:id="@+id/mytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13-7-23 20:56"
+        android:layout_below="@id/othermessage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#898989"
+        android:visibility="gone"
+        />
+    <ImageView 
+        android:id="@+id/mypic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/mytime"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+    <LinearLayout 
+        android:id="@+id/mymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_toLeftOf="@id/mypic"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/mytime"
+        android:layout_marginTop="20dp">
+        <TextView 
+            android:id="@+id/mymessagedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在吗？"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/chatto_bg"
+            android:layout_gravity="right"
+            style="@style/chat_content_date_style"
+            android:visibility="gone"/>
+<!--           <TextView  -->
+<!-- 	                android:id="@+id/tv_msg_content_mine" -->
+<!-- 	                android:layout_width="wrap_content" -->
+<!-- 	                android:layout_height="wrap_content" -->
+<!-- 	                android:text="2222222222" -->
+<!-- 	                android:clickable="true" -->
+<!-- 	                android:longClickable="true" -->
+<!-- 	                android:background="@drawable/chatto_bg" -->
+<!-- 	                style="@style/chat_content_date_style" -->
+<!-- 	                android:layout_gravity="right"/> -->
+    </LinearLayout>
+    
+</RelativeLayout>

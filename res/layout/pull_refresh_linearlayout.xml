@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lee.pullrefresh.ui.PullRefreshLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/lin">
+    
+    <TextView android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="逗比社会逗比多，逗比多了出2b"/>
+    <EditText android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你想说什么，你以为我会让你说，但是你不能输入"
+        android:enabled="false"/>
+    <ImageView android:id="@+id/ivimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"/>
+
+</com.lee.pullrefresh.ui.PullRefreshLinearLayout>

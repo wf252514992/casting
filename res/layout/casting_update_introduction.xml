@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:weightSum="7" >
+
+        <EditText 
+            style="@style/style_label_text_name"
+            android:text="@string/aboutme"
+            android:gravity="top"
+            android:id="@+id/edt_introduction"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</LinearLayout>

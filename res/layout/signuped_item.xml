@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+    <ImageView 
+        android:id="@+id/pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="副影视公司"
+        android:layout_toRightOf="@id/pic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+     <Button
+        android:id="@+id/relationshipState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关系状态"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+       </Button>
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天天气好好啊今天天气好好啊..."
+        android:layout_toRightOf="@id/pic"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_toLeftOf="@id/relationshipState"
+        android:layout_marginRight="20dp"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+         android:layout_below="@id/text"
+        />
+  
+</RelativeLayout>

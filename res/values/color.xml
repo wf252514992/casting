@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="orage">#ee9a49</color>
+	<color name="login_edt">#b8b8b8</color>
+	<color name="clo_txt_back">#e15b3d</color>
+	<color name="clo_txt_back_press">#f5ae9f</color>
+	<color name="mainbg_gray">#ebebeb</color>
+	<color name="registitemline">#dcdcdc</color>
+	<color name="grey">#b8b8b8</color>
+	<color name="gray">#ffd9d9da</color>
+	<color name="gray1">#929292</color>
+	<color name="gray2">#7f7f7f</color>
+	<color name="blue1">#5f89a1</color>
+	<color name="blue2">#0091ff</color>
+	<color name="awhite">#95dbdbdb</color>
+	<color name="ablack">#99303030</color>
+	<color name="darkread">#b12424</color>
+	<color name="darkpink">#dc8e91</color>
+	<color name="textcolor">#898989</color>
+	<color name="green">#4EEE94</color>
+	<color name="purple">#9B30FF</color>
+	<color name="transparent_black">#33000000</color>
+	<color name="yellow">#FFcc00</color>
+	<color name="attention_no">#828282</color>
+	<color name="attention_yes">#0066ff</color>
+	<color name="attention_each">#b12424</color>
+	<color name="work_blue">#2ca5f2</color>
+	<color name="halftransparent">#88000000</color>
+	<!-- 阴影色 -->
+	<color name="shade">#77000000</color>
+	<color name="breen_blue">#007fff</color>
+	<color name="red">#ff0000</color>
+	<color name="bottom_lable">#f0f0f0</color>
+	<color name="transparent" >#FFFAF0</color>  
+</resources>

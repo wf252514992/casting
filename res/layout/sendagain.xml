@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/ll_expression"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/atsend "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/at_btn" />
+
+            <ImageButton
+                android:id="@+id/expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/express_btn" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/linear1"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_expression"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/chat_ll_expression_height"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/chat_vp_id_height"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_vp_selected_index"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlelayout"
+        android:layout_above="@id/bottom"
+        android:background="#ebebeb" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editreview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="说说转发心得...." />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editreview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="#f1f1f1" >
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/line1"
+                    android:background="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/pic"
+                    android:text=" @副导演"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/pic"
+                    android:text="现在发布视镜通知现在发布视镜通知现在发布视镜通知"
+                    android:textSize="14sp"
+                    android:textColor="#808080" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_below="@id/text"
+                    android:layout_toRightOf="@id/pic" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

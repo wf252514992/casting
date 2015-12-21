@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <TableRow
+            style="@style/style_tableitem2"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/style_label_worksadd_text"
+                android:layout_weight="5"
+                android:text="@string/uploadpic" />
+
+            <LinearLayout
+                android:id="@+id/imglayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp" >
+
+                <ImageView
+                    android:id="@+id/img_winnerspic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/aboutme"
+                    android:focusable="false"
+                    android:src="@drawable/me_zuopindownloadz"
+                    android:tag="@string/winners" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/registered_personal2x" />
+        </TableRow>
+
+        <TableRow
+            style="@style/style_tableitem2"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/style_label_worksadd_text"
+                android:layout_weight="5"
+                android:text="@string/wintime" />
+
+            <TextView
+                android:id="@+id/txt_wintime"
+                style="@style/style_label_worksadd_val"
+                android:layout_weight="3"
+                android:tag="@string/wintime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/registered_personal2x" />
+        </TableRow>
+
+        <TableRow
+            style="@style/style_tableitem2"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/style_label_worksadd_text"
+                android:layout_weight="5"
+                android:text="@string/wintype" />
+
+            <TextView
+                android:id="@+id/txt_winname"
+                style="@style/style_label_worksadd_val"
+                android:layout_weight="3"
+                android:tag="@string/wintype" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/registered_personal2x" />
+        </TableRow>
+
+        <TableRow
+            style="@style/style_tableitem2"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                style="@style/style_label_worksadd_text"
+                android:layout_weight="5"
+                android:text="@string/winwork" />
+
+            <TextView
+                android:id="@+id/txt_winwork"
+                style="@style/style_label_worksadd_val"
+                android:layout_weight="3"
+                android:tag="@string/winwork"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawableRight="@drawable/registered_personal2x" />
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

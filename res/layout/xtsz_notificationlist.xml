@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/layout_comment"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/commentqx" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/txt_qx_comment"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right"  />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_priletter"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/privateletterqx" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/txt_qx_priletter"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_tx_comment"
+                style="@style/style_tableitem"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/commenttx" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/txt_tx_comment"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_tx_privateletter"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/privatelettertx" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/txt_tx_priletter"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_notattention"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/notattention" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/txt_tx_beattention"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

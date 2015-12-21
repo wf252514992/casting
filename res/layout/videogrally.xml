@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:casting="http://schemas.android.com/apk/res/com.example.casting_android"
+    android:id="@+id/layout_base"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <com.example.casting.util.view.refresh.PullToRefreshGridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlelayout"
+        android:layout_marginTop="2dp"
+        casting:numColumns="3"
+        android:gravity="center"
+        casting:horizontalSpacing="5"
+        android:stretchMode="columnWidth"
+        casting:verticalSpacing="5" />
+  
+   </RelativeLayout>

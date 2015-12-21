@@ -1,0 +1,87 @@
+package com.baidu.loc;
+
+import android.app.Application;
+import android.os.Process;
+import android.os.Vibrator;
+import android.tools.ConnectionUtil;
+import android.util.Log;
+import android.widget.TextView;
+
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.BDNotifyListener;
+import com.baidu.location.GeofenceClient;
+import com.baidu.location.LocationClient;
+
+public class Location extends Application {
+
+	public LocationClient mLocationClient = null;
+	public GeofenceClient mGeofenceClient;
+	private String mData;  
+	public MyLocationListenner myListener = new MyLocationListenner();
+	public TextView mTv;
+	public NotifyLister mNotifyer=null;
+	public Vibrator mVibrator01;
+	public static String TAG = "LocTestDemo";
+	
+	@Override
+	public void onCreate() {
+		mLocationClient = new LocationClient( this );
+		mLocationClient.setAK("697f50541f8d4779124896681cb6584d");
+		mLocationClient.registerLocationListener( myListener );
+		mGeofenceClient = new GeofenceClient(this);
+
+		
+		super.onCreate(); 
+		Log.d(TAG, "... Application onCreate... pid=" + Process.myPid());
+	}
+	
+
+	public void logMsg(String str) {
+		try {
+			mData = str;
+			if ( mTv != null )
+				mTv.setText(mData);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public class MyLocationListenner implements BDLocationListener {
+		@Override
+		public void onReceiveLocation(BDLocation location) {
+			if (location == null)
+				return ;
+			StringBuffer sb = new StringBuffer(1);
+			
+			   if (!ConnectionUtil.isNetworkAvailable(getApplicationContext())) {
+				   sb.append("¶¨Î»Ê§°Ü£¬Çë¼ì²éÍøÂç");
+				}else{
+					sb.append(location.getProvince()+location.getCity()+location.getDistrict()+location.getStreet());
+				}
+				
+			logMsg(sb.toString());
+			Log.i(TAG, sb.toString());
+		}
+		
+		public void onReceivePoi(BDLocation poiLocation) {
+			if (poiLocation == null){
+				return ; 
+			}
+			StringBuffer sb = new StringBuffer(1);
+			if (poiLocation.getLocType() == BDLocation.TypeNetWorkLocation){
+				sb.append(poiLocation.getAddrStr());
+				System.out.println("............poiLocation.getStreet():"+poiLocation.getStreet());
+			} 
+
+			logMsg(sb.toString());
+		}
+	}
+	
+	public class NotifyLister extends BDNotifyListener{
+		public void onNotify(BDLocation mlocation, float distance){
+			mVibrator01.vibrate(1000);
+		}
+	}
+}

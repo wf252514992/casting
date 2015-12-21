@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:rgview="http://schemas.android.com/apk/res/com.example.casting_android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/workspiclayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:defaultsrc="@drawable/me_zhanshidownloadz"
+            rgview:title="@string/uploadpic"
+            rgview:type="20" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/releasetimelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/releasetime"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/worknamelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/workname"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/workerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/worker"
+            rgview:txtsize="12sp"
+            android:visibility="gone"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/directorreallayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/directorreal"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/joinwokerslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/joinwokers"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/beizhulayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            rgview:title="@string/beizhu"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+    </LinearLayout>
+
+</LinearLayout>

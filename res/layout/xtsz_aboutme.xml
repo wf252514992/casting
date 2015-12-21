@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/applogo"
+                android:gravity="center"
+                android:text="V1.0.1"
+                android:textSize="20sp" 
+                android:paddingTop="10dp"/>
+
+          <!--   <TableRow
+                style="@style/style_tableitem"
+                android:layout_marginTop="20dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:text="@string/suggestion" />
+            </TableRow> -->
+
+          <!--   <TableRow
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:text="@string/official" />
+            </TableRow> -->
+
+            <TextView
+                style="@style/style_label_text"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:hint="@string/notifaction_company"
+                android:padding="10dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

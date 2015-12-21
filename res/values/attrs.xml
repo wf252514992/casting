@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+	
+    <declare-styleable name="SwitchButton">
+        <attr name="bg" format="reference"/>
+        <attr name="slipImg" format="reference"/>
+        <attr name="slipOn" format="boolean"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="RegistView"><!-- 控件名称 -->
+		<attr name="title" format="string" /><!--标题 -->
+		<attr name="type" format="string" /><!-- 输入类型 -->
+		<attr name="units" format="string" /><!-- 单位 -->
+		<attr name="txtsize" format="dimension" /><!-- 字体大小 -->
+		<attr name="txtcolor" format="color" /><!-- 字体颜色 -->
+		<attr name="defaultvalue" format="string" /><!-- 默认值 -->
+		<attr name="defaultsrc" format="reference|integer" /><!-- 默认值 -->
+	</declare-styleable>
+	
+       <declare-styleable name="EditText"><!-- 控件名称 -->
+		<attr name="pagecount" format="string" /><!-- 属性名称，类型 -->
+		<attr name="listener" format="boolean" />
+	</declare-styleable>
+	
+     <declare-styleable name="GridView"><!-- 控件名称 -->
+		<attr name="numColumns" format="string" /><!-- 属性名称，类型 -->
+		<attr name="horizontalSpacing" format="string" />
+		<attr name="verticalSpacing" format="string"/>
+	</declare-styleable>
+	
+     <attr name="auto_play" forMymat="boolean" />
+
+    <declare-styleable name="SlidingSwitcherView">
+        <attr name="auto_play" />
+    </declare-styleable>
+</resources>

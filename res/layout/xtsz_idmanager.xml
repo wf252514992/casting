@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/com.example.casting_android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.ui.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lstview_ids"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            test:listener="false" >
+        </com.ui.baoyz.swipemenulistview.SwipeMenuListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/imgview_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/aboutme"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add_btn" />
+
+            <TextView
+                android:id="@+id/txt_myname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="添加账号"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

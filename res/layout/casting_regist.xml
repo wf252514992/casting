@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/background_registitem_t"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edt_regist_phone"
+                    style="@style/style_edt_login"
+                    android:layout_weight="2"
+                    android:ems="11"
+                    android:hint="@string/inputphonenum"
+                    android:inputType="phone" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_regist_getchecknum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="5"
+                    android:background="@drawable/btn_regist_getchecknum"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_regist_checknum"
+                style="@style/style_edt_login"
+                android:layout_marginTop="15dp"
+                android:hint="@string/inputchecknum"
+                android:inputType="number" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_regist_pwd"
+                style="@style/style_edt_login"
+                android:layout_marginTop="15dp"
+                android:hint="@string/inputpwd"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/ckb_regist_casting"
+                    style="@style/style_chkbtn_regist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="已阅读并同意"
+                    android:textColor="@color/login_edt"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_remind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/casting"
+                    android:textColor="@color/blue1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_regist_next"
+            style="@style/style_btn_login_registpart"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_8_grey"
+            android:enabled="false"
+            android:text="@string/nextcasting" />
+    </LinearLayout>
+
+</LinearLayout>

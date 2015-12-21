@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb" >
+     <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+     <com.example.casting.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@id/titlelayout">
+    <ListView
+        android:id="@+id/reviewList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#ebebeb"/>
+    </com.example.casting.RefreshableView>
+    <TextView
+       android:id="@+id/nomessage"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:textSize="18sp" 
+       android:visibility="gone"/>
+  
+
+</RelativeLayout>

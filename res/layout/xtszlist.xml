@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/txt_id"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/managerid" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_uploadmypic"
+                style="@style/style_tableitem"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/uploadmypic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_notifaction"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/notifaction" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_ideal"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/feedback" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_clearcatch"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/clearcache" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_checkversion"
+                style="@style/style_tableitem"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/checkversion" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/txt_aboutus"
+                style="@style/style_tableitem"
+                android:layout_marginTop="10dp"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:paddingRight="10dp"
+                    android:text="@string/aboutus" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/style_btn_login_registpart"
+        android:layout_margin="10dp"
+        android:text="@string/returncurrent" />
+
+</LinearLayout>

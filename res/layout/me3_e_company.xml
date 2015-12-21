@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:weightSum="15" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" >
+
+            <ImageView
+                android:id="@+id/backgroundlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/me_bgztitle" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:padding="10dp" >
+
+                        <com.example.casting.util.view.CircleImageView
+                            android:id="@+id/img_pic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/corners_gray"
+                            android:contentDescription="@string/aboutme"
+                            android:gravity="center"
+                            android:padding="3dp" />
+
+                        <ImageView
+                            android:id="@+id/img_regist"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/mine_special2"
+                            android:contentDescription="@string/aboutme"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp" >
+
+                            <LinearLayout
+                                android:id="@+id/dynamiclayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_layout"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/txt_dynamic"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/dynamic"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="2dp"
+                                android:layout_height="fill_parent"
+                                android:contentDescription="@string/aboutme"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:src="@color/gray" />
+
+                            <LinearLayout
+                                android:id="@+id/attentionlayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_layout"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/txt_attention"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/attention"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="2dp"
+                                android:layout_height="fill_parent"
+                                android:contentDescription="@string/aboutme"
+                                android:paddingBottom="8dp"
+                                android:paddingTop="8dp"
+                                android:src="@color/gray" />
+
+                            <LinearLayout
+                                android:id="@+id/fanslayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_layout"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/txt_fans"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/fans"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/me_dizhiz"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baseinfolayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/group_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rdo_personshow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ckb_infoitem"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/me_personplay"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingRight="2dp"
+                    android:text="公司展示"
+                    android:textColor="@color/color_registtitle"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_personwork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ckb_infoitem"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/me_personwork"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingRight="2dp"
+                    android:text="公司作品"
+                    android:textColor="@color/color_registtitle"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_personwinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ckb_infoitem"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/me_personwinner"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingRight="2dp"
+                    android:text="获奖经历"
+                    android:textColor="@color/color_registtitle"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_personphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ckb_infoitem"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/me_personcommunication"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingRight="2dp"
+                    android:text="我的资料"
+                    android:textColor="@color/color_registtitle"
+                    android:textSize="12sp" />
+            </RadioGroup>
+            <!-- </HorizontalScrollView> -->
+
+            <LinearLayout
+                android:id="@+id/contentlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

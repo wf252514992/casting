@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbg2x"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:weightSum="12" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:gravity="center|bottom" >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/aboutme"
+            android:src="@drawable/loginlogo2x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_zhaomu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/edtview_login_bg"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/aboutme"
+            android:paddingLeft="20dp"
+            android:src="@drawable/choose_zhaomu" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zhaomu"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_beizhaomu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/edtview_login_bg"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/aboutme"
+            android:paddingLeft="20dp"
+            android:src="@drawable/choose_beizhaomu" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/beizhaomu"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rgview="http://schemas.android.com/apk/res/com.example.casting_android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/piclayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:defaultsrc="@drawable/me_edit_txsmall"
+            rgview:title="@string/titlepic"
+            rgview:type="20" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/nickname"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/name"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_sex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/sex"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_birth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/birth"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_statue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            rgview:title="@string/companystatue"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_directorregist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/directorregist"
+            rgview:txtsize="12sp"
+            rgview:defaultsrc="@drawable/me_edit_txsmall"
+            rgview:type="20"  />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_changebackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            rgview:title="@string/changebackground"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_hometown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/hometown"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/address"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_height"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/height"
+            rgview:txtsize="12sp"
+            rgview:type="10"
+            rgview:units="cm" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_weigh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/weigh"
+            rgview:txtsize="12sp"
+            rgview:type="10"
+            rgview:units="kg" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_education"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/education"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_language"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/language"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_introduction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/introduction"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_special"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/special"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/label"
+            rgview:txtsize="12sp"
+            rgview:type="30" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/email"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/qq"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_wechat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/wechat"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+    </LinearLayout>
+
+</LinearLayout>

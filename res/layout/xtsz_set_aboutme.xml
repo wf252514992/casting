@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableRow
+                style="@style/style_ranklist_item"
+                android:layout_height="35dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:id="@+id/txt_notificaiton"
+                    android:hint="@string/notifaction_aboutme"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/txt_notifaction_all"
+                    style="@style/style_tableitem"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/rdo_btn_green"
+                    android:padding="10dp"
+                    android:text="@string/notifaction_all" />
+
+                <RadioButton
+                    android:id="@+id/txt_notifaction_myattention"
+                    style="@style/style_tableitem"
+                    android:button="@null"
+                    android:drawableRight="@drawable/rdo_btn_green"
+                    android:padding="10dp"
+                    android:text="@string/notifaction_myattention" />
+
+                <RadioButton
+                    android:id="@+id/txt_notifaction_noting"
+                    style="@style/style_tableitem"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/rdo_btn_green"
+                    android:padding="10dp"
+                    android:text="@string/notifaction_noting" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/edt_findpwd_newpwd"
+            style="@style/style_edt_login"
+            android:hint="@string/inputnewpwd"
+            android:maxLength="12"
+            android:inputType="textPassword" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_findpwd_dnewpwd"
+            style="@style/style_edt_login"
+            android:layout_marginTop="10dp"
+            android:maxLength="12"
+            android:hint="@string/dinputnewpwd"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_findpwd_submit"
+            style="@style/style_btn_login_registpart"
+            android:layout_marginTop="15dp" 
+            android:text="@string/pwdsubmit" />
+    </LinearLayout>
+
+</LinearLayout>

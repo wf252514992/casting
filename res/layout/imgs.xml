@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:casting="http://schemas.android.com/apk/res/com.example.casting_android"
+    android:id="@+id/layout_base"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF" >
+
+    <!-- <GridView -->
+    <!-- android:id="@+id/gridView1" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@+id/relativeLayout1" -->
+    <!-- android:numColumns="3" -->
+    <!-- android:horizontalSpacing="5dp" -->
+    <!-- android:verticalSpacing="5dp" > -->
+    <!-- </GridView> -->
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+     <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titlelayout"
+        android:layout_marginTop="10dp"
+         android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/next_btn"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/button3" />
+    </RelativeLayout>  
+  <!--  <RelativeLayout
+        android:id="@+id/layout_shade"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#a0000000"
+        android:visibility="gone"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:focusable="true"
+     >
+   
+    <RelativeLayout
+        android:id="@+id/layout_bootom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EFEFEF"
+        android:orientation="vertical"
+       >
+
+        <LinearLayout
+            android:id="@+id/layout_operate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            > 
+
+            <Button
+                android:id="@+id/btn_takephoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:onClick="onClick"
+                android:text="拍照"
+                android:textColor="@color/breen_blue" />
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:onClick="onClick"
+                android:text="从相册选择"
+                android:textColor="@color/breen_blue" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_operate"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:onClick="onClick"
+            android:text="取消"
+            android:textColor="@color/breen_blue" />
+            </RelativeLayout>
+    </RelativeLayout> -->
+  
+   </RelativeLayout>

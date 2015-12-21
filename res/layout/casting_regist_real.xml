@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <RadioGroup
+        android:id="@+id/rdo_regist"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdo_director"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rdo_btn_regist"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/director"
+            android:textColor="@color/color_registtitle" />
+
+        <RadioButton
+            android:id="@+id/rdo_company"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rdo_btn_regist"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/company"
+            android:textColor="@color/color_registtitle" />
+    </RadioGroup>
+
+    <com.example.casting.util.view.ReboundScrollView
+        style="@style/style_contentlayout"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/background_registitem_t"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/mainbg_gray"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/style_btn_login_registpart"
+                android:layout_margin="10dp"
+                android:text="@string/gotologin" />
+        </LinearLayout>
+    </com.example.casting.util.view.ReboundScrollView>
+
+</LinearLayout>

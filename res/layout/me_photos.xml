@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_baseinfos"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_25_trans"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/me_margin_bottom"
+    android:paddingLeft="@dimen/me_margin_left"
+    android:paddingRight="@dimen/me_margin_right"
+    android:paddingTop="@dimen/me_margin_top" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.example.casting.util.view.HalfCircleImageView
+            android:id="@+id/layout_backgroud"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"  />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_25_trans"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <GridView
+                        android:id="@+id/lst_selfplay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="3dp"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="3dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_onclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_25_yellow"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="5dp"
+                    android:text="个人作品"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

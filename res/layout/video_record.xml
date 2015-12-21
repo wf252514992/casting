@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/title"
+        android:gravity="top"
+        android:orientation="vertical" >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton 
+            android:id="@+id/camera_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/camera_btn"
+            />
+        <ImageButton 
+            android:id="@+id/camera_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/off"
+            />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="03:02"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        </RelativeLayout>
+        <SurfaceView
+            android:layout_weight="1"
+            android:id="@+id/xxfs_surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true" />
+<!--         <ImageView -->
+<!--             android:layout_weight="1" -->
+<!--             android:id="@+id/save_image" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:visibility="gone" /> -->
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phoneType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:drawableTop="@drawable/yellow_little_circle"
+                 android:textColor="@color/yellow"
+                 
+                android:text="照片"/>
+            
+             <TextView
+                android:id="@+id/videoType"
+                android:text="视频"
+                 android:drawableTop="@drawable/white_little_circle"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dip"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/canelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:padding="8dp"
+            android:text="取消"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/xxfs_shiping_record"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/take_phone_bg"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:padding="8dp"
+            android:text="确认"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

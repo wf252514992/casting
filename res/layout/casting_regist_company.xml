@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rgview="http://schemas.android.com/apk/res/com.example.casting_android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/piclayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:defaultsrc="@drawable/me_edit_txsmall"
+            rgview:title="@string/titlepic"
+            rgview:type="20" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/companyname"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+    <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_companystatue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/companystatue"
+            android:visibility="gone"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+        
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_companyintroduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/companyintroduce"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/companyphone"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_companylocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/companylocation"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_companyregist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/companyregist2"
+            rgview:txtsize="12sp"
+            rgview:defaultsrc="@drawable/me_edit_txsmall"
+            rgview:type="20"  />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_changebackground"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            rgview:title="@string/changebackground"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_companyemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            rgview:title="@string/companyemail"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+
+        <com.example.casting.util.view.RegistValueView
+            android:id="@+id/layout_legalperson"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            rgview:title="@string/legalperson"
+            rgview:txtsize="12sp"
+            rgview:type="10" />
+    </LinearLayout>
+
+</LinearLayout>

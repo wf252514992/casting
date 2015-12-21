@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/functemplate" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/contentlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:id="@+id/layout_aboutme"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/aboutme" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right"
+                    android:text="所有人" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_comment"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/comment" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_newfans"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/newfans" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right"
+                    android:text="所有人" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/layout_notattention"
+                style="@style/style_tableitem"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/style_label_text"
+                    android:focusable="false"
+                    android:text="@string/notattention" />
+
+                <TextView
+                    style="@style/style_label_text_grayclolor"
+                    android:layout_width="fill_parent"
+                    android:drawableRight="@drawable/registered_personal2x"
+                    android:gravity="right" />
+            </TableRow>
+
+            <CheckBox
+                android:id="@+id/ckb_privateletter"
+                style="@style/style_tableitem"
+                android:layout_marginTop="10dp"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/switch_btn"
+                android:padding="10dp"
+                android:text="@string/privateletter" />
+
+            
+            <CheckBox
+                android:id="@+id/ckb_set_aboutme"
+                style="@style/style_tableitem"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/switch_btn"
+                android:padding="10dp"
+                android:text="@string/aboutme" />
+
+            <CheckBox
+                android:id="@+id/ckb_closecomment"
+                style="@style/style_tableitem"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/switch_btn"
+                android:padding="10dp"
+                android:text="@string/comment" />
+            <CheckBox
+                android:id="@+id/ckb_closefans"
+                style="@style/style_tableitem"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/switch_btn"
+                android:padding="10dp"
+                android:text="@string/newfans" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

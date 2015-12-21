@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="castingfirstform">CastingFirstForm</string>
+    <string name="findpwdsuccessform">FindPWDSuccessForm</string>
+    <string name="findpwdthirdform">FindPWDThirdForm</string>
+    <string name="findpwdsecondform">FindPWDSecondForm</string>
+    <string name="findpwdfirstform">FindPWDFirstForm</string>
+    <string name="registform">RegistForm</string>
+    <string name="loginform">LoginForm</string>
+    <string name="userinfoactivity">UserInfoActivity</string>
+    <string name="xtszactivity">XtszActivity</string>
+    <string name="manageridsactivity">ManagerIDsActivity</string>
+    <string name="notifactionactivity">NotifactionActivity</string>
+    <string name="feedbackactivity">FeedBackActivity</string>
+    <string name="aboutmeactivity">AboutMeActivity</string>
+    <string name="set_aboutmeactivity">Set_AboutmeActivity</string>
+    <string name="set_attentionactivity">Set_AttentionActivity</string>
+    <string name="set_fansactivity">Set_FansActivity</string>
+    <string name="set_reviewactivity">Set_ReviewActivity</string>
+    <string name="squareactivity">SquareActivity</string>
+    <string name="meactivity">MeActivity</string>
+    <string name="myinfoactivity">MyInfoActivity</string>
+    <string name="maintab">MainTab</string>
+    <string name="mydataactivity">MyDataActivity</string>
+    <string name="attentionlistactivity">AttentionListActivity</string>
+    <string name="beattentionedlistactivity">BeAttentionedListActivity</string>
+    <string name="updateintrouction">UpdateIntrouction</string>
+    <string name="updatelabelform">UpdateLabelForm</string>
+    <string name="updatelabelnform">UpdateLabelNForm</string>
+    <string name="registdetailactivity">RegistDetailActivity</string>
+    <string name="companyregistactivity">CompanyRegistActivity</string>
+    <string name="myfansactivity">MyFansActivity</string>
+    <string name="MeDynamic">MeDynamic</string>
+    <string name="winneraddactivity">WinnerAddActivity</string>
+    <string name="winneractivity">WinnerActivity</string>
+    <string name="worksactivity">WorksActivity</string>
+    <string name="worksaddactivity">WorksAddActivity</string>
+    <string name="maintabnew">MainTabNew</string>
+    <string name="me3activity">Me3Activity</string>
+    <string name="userinfoeditactivity">UserInfoEditActivity</string>
+    <string name="userinfoshowactivity">UserInfoShowActivity</string>
+    <string name="otherwatchmeactivity">OtherWatchMeActivity</string>
+    <string name="otherwatchdirectoractivity">OtherWatchDirectorActivity</string>
+    <string name="directoreditactivity">DirectorEditActivity</string>
+    <string name="directorshowactivity">DirectorShowActivity</string>
+    <string name="companyshowactivity">CompanyShowActivity</string>
+    <string name="otherwatchcompanyactivity">OtherWatchCompanyActivity</string>
+    <string name="changebgactivity">ChangeBgActivity</string>
+    <string name="loginaddidform">LoginAddIDForm</string>
+    <string name="worksshowactivity">WorksShowActivity</string>
+    <string name="winnershowactivity">WinnerShowActivity</string>
+    <string name="companyeditactivity">CompanyEditActivity</string>
+    <string name="myvideoactvity">MyVideoActvity</string>
+    <string name="meimgs">MeImgs</string>
+
+</resources>

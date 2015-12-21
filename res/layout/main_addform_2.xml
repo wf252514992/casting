@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smssdk_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/recruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/recruitimg"
+                android:layout_width="140dp"
+                android:layout_height="158dp"
+                android:background="@drawable/zm_release_icon_zhaomu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recruitimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="招募"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/recruit" >
+
+            <ImageView
+                android:id="@+id/wordimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/release_icon_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wordimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="文字"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/word" >
+
+            <ImageView
+                android:id="@+id/photosimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/release_icon_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photosimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="相册"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/word"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/recruit" >
+
+            <ImageView
+                android:id="@+id/takephotoimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/release_icon_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/takephotoimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="拍摄"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/takephoto" >
+
+            <ImageView
+                android:id="@+id/voiceimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/release_icon_voice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/voiceimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="语音"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/closelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:contentDescription="@string/MeDynamic"
+            android:src="@drawable/release_delete" />
+    </LinearLayout>
+
+</LinearLayout>
